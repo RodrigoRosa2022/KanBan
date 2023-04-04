@@ -11,6 +11,7 @@
     <title>KanBan</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <div id="app">
       <nav>
@@ -26,37 +27,38 @@
           <li>
             <a href="#">
               <ion-icon name="people"></ion-icon>
-              Equipes
+              Teams
             </a>
           </li>
           <li>
             <a href="#">
               <ion-icon name="document-text"></ion-icon>
-              Relatórios
+              Reports
             </a>
           </li>
           <li>
             <a href="#">
               <ion-icon name="cog"></ion-icon>
-              Ajustes
+              Settings
             </a>
           </li>
         </ul>
       </nav>
+
       <main>
         <div class="inner">
           <section class="title-avatar">
-            <h1>Meu KanBan<ion-icon name="pencil-outline"></ion-icon></h1>
+            <h1>My KanBan<ion-icon name="pencil-outline"></ion-icon></h1>
             <img src="https://github.com/rodrigorosa2022.png" alt="avatar">
           </section>
           <section class="filter">
             <button>
               <ion-icon name="filter-outline"></ion-icon>
-              <span>Filtrar</span>
+              <span>Filter</span>
             </button>
             <div class="input-wrapper">
               <ion-icon name="search-outline"></ion-icon>
-              <input type="text" placeholder="Busque por cards, assuntos, ou responsáveis...">
+              <input type="text" placeholder="Search for cards, subjects or team members">
             </div>
           </section>
 
@@ -64,49 +66,59 @@
 
           <section class="kanban">
             <div class="todo">
-              <h2>A Fazer</h2>
-              <div class="cards">
-                <div class="card">
-                    <h3>Novo Desafio</h3>
-                    <p>Novo desafio do #boracodar onde é proposto construir uma página de login</p>
+              <h2>To do</h2>
+              <div class="cards dropzone">
+                <div class="card" draggable="true">
+                    <h3>New Task</h3>
+                    <p>New task from #boracodar where it is proposed to make a login page</p>
                     <div class="tags">
                       <span>rocketseat</span>
-                      <span>desafio</span>
+                      <span>challenge/span>
                     </div>
                   </div>
-                  <div class="card">
-                    <h3>Implementar Drag&Drop neste kanban</h3>
-                    <p>Vide instruções no vídeo "Drag and Drop Raiz com a API do HTML, css e javascript. MAsterclass"</p>
+                  <div class="card"  draggable="true">
+                    <h3>Implement Drag&Drop at this kanban</h3>
+                    <p>Check out instructuions on the vide "Drag and Drop Raiz com a API do HTML, css e javascript. MAsterclass"</p>
                     <div class="tags">
                       <span>rocketseat</span>
-                      <span>desafio</span>
+                      <span>Drag&Drop</span>
                     </div>
                   </div>
                 </div>
             </div>
             <div class="doing">
-              <h2>Fazendo</h2>
-              <div class="cards">
-                <div class="card">
-                  <h3>Bora Codar um KanBan 🧑🏾‍💻</h3>
-                  <p>Novo desafio do #boracodar da Rocketseat, onde é proposto construir um quadro KanBan</p>
+              <h2>Doing</h2>
+              <div class="cards dropzone">
+                <div class="card"  draggable="true">
+                  <h3>Let's code a KanBan 🧑🏾‍💻</h3>
+                  <p>New task from #boracodar da Rocketseat, where it is proposed to make a kanban board</p>
                   <div class="tags">
                     <span>rocketseat</span>
-                    <span>desafio</span>
+                    <span>Kanban</span>
                   </div>
                 </div>
-                <div class="card">
-                  <h3>Manter a ofensiva 🔥</h3>
-                  <p>Manter minha atividade na plataforma da Rocketseat para não perder a ofensiva</p>
+                <div class="card"  draggable="true">
+                  <h3>Keeping up the momentum 🔥</h3>
+                  <p>Keep up the activity on my RocetSeat platform to not lose the momentum</p>
                   <div class="tags">
                     <span>rocketseat</span>
-                    <span>desafio</span>
+                    <span>Momentum</span>
                   </div>
                 </div>
               </div>
             </div>
             <div class="done">
-              <h2>Feito</h2>
+              <h2>Done</h2>
+              <div class="cards dropzone">
+                  <div class="card"  draggable="true">
+                    <h3>Implement Drag&Drop at this kanban</h3>
+                    <p>Check out instructuions on the vide "Drag and Drop Raiz com a API do HTML, css e javascript. MAsterclass"</p>
+                    <div class="tags">
+                      <span>rocketseat</span>
+                      <span>Drag&Drop</span>
+                    </div>
+                  </div>
+                </div>
             </div>
           </section>
 
@@ -123,5 +135,6 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script src="script.js" defer></script>
   </body>
 </html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag&Drop Test</title>
+    <style></style>
+
+    <!-- link do css criado com o emmet (!?) com o seguinte comando:
+    link.css -->
+    <link rel="stylesheet" href="dragdrop.css" class="css">
+
+
+</head>
+<body>
+
+    <!-- Estrutura abaixo criada com emmet (!?) com o seguinte comando:
+    .boards>h3+.dropzone>.card>.status+.content -->
+    <div class="boards">
+        <div class="board">
+            <h3>To do</h3>
+            <div class="dropzone">
+                <div class="card" draggable="true">
+                    <div class="status"></div>
+                    <div class="content">Integrate with previous kanban layout website</div>
+                </div>
+            </div>
+        </div>
+        <div class="board">
+            <h3>In progress</h3>
+            <div class="dropzone">
+                <div class="card" draggable="true">
+                    <div class="status"></div>
+                    <div class="content">Coding Drag and Drop</div>
+                </div>
+            </div>
+        </div>
+        <div class="board">
+            <h3>Done</h3>
+            <div class="dropzone">
+                <div class="card" draggable="true">
+                    <div class="status"></div>
+                    <div class="content">Kanban raw layout website</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="dragdrop.js" defer></script>
+
+
+
+</body>
+</html>

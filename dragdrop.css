@@ -1,0 +1,33 @@
+* {
+    border: 1px solid purple;
+    margin: 10px;
+}
+
+.boards {
+    display: flex;
+    justify-content: space-between;
+    width: 350;
+
+}
+
+.dropzone {
+    min-height: 300px;
+    min-width: 200px;
+}
+
+.highlight {
+    background-color: lightpink;
+}
+
+.card, .dropzone {
+    transition: .4s;
+}
+
+.is-dragging {
+    cursor: move;
+    opacity: 0.3;
+}
+
+.over {
+    background-color: lightgreen;
+}
